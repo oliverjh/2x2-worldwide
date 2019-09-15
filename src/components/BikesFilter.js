@@ -19,7 +19,8 @@ export default function BikesFilter({bikes}) {
         minPrice,
         maxPrice,
         male,
-        female
+        female,
+        kids
     } = context;
 
     // get unique types for select field
@@ -67,7 +68,7 @@ export default function BikesFilter({bikes}) {
                 {/* End of Select Brand */}
                 {/* Bike Price */}
                 <div className="form-group">
-                    <label htmlFor="price">Bike Price £{price}</label>
+                    <label htmlFor="price">Bike Price (SRP) £{price}</label>
                     <input type="range" name="price" min={minPrice} max={maxPrice} id="price" value={price} onChange={handleChange} className="form-control" />
                 </div>
                 {/* End of Bike Price */}
@@ -91,6 +92,15 @@ export default function BikesFilter({bikes}) {
                                 checked={female} 
                                 onChange={handleChange} />
                             <label htmlFor="female">Female</label>
+                        </div>
+                        <div className="single-extra">
+                        <input
+                                type="checkbox" 
+                                name="kids" 
+                                id="kids" 
+                                checked={kids} 
+                                onChange={handleChange} />
+                            <label htmlFor="kids">Kids</label>
                         </div>
                     </div>
                 </div>

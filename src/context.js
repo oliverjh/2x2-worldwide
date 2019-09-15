@@ -18,6 +18,7 @@ class BikeProvider extends Component {
         maxPrice: 0,
         male: false,
         female: false,
+        kids: false
     };
 
     //get data from contentful
@@ -86,7 +87,8 @@ class BikeProvider extends Component {
             brand,
             price, 
             male,
-            female
+            female,
+            kids
         } = this.state;
 
         // All the rooms
@@ -116,6 +118,11 @@ class BikeProvider extends Component {
         //filter by female
         if (female) {
             tempBikes = tempBikes.filter(bike => bike.female === true);
+        }
+
+        //filter by kids
+        if (kids) {
+            tempBikes = tempBikes.filter(bike => bike.kids == true);
         }
 
         //Change state - i.e. the bikes that are returned after filtering
