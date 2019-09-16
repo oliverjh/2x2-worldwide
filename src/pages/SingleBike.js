@@ -66,8 +66,11 @@ export default class SingleBike extends Component {
                         </article>
                         <article className="info">
                             <h3>Info</h3>
-                            <h6>Price: £{price} SRP</h6>
+                            <h6>Price: £{price}.99 SRP</h6>
+                            {/*
                             <h6>Size: {size} inch</h6>
+                            */
+                            }
                             <h6>Year: {capacity}</h6>
                             {
                             /*

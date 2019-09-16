@@ -14,7 +14,7 @@ export default function Bike({bike}) {
             <div className="img-container">
                 <img src={images[0] || defaultImg} alt="bike" />
                 <div className="price-top">
-                    <h6>£{price}</h6>
+                    <h6>£{price}.99</h6>
                 </div>
                 <Link to={`/bikes/${slug}`} className="btn-primary room-link">View Bike</Link>  
             </div>
