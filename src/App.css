@@ -162,13 +162,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/mountain-biking-image1.jpg") center/cover no-repeat;
+  background: url("./images/homepage-image.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/bike-store.jpg");
+  background-image: url("./images/bikes-page-image.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -315,6 +315,8 @@ h6 {
 .room {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  /*Ensure no white spacing at the bottom*/
+  background: orange;
 }
 .room:hover {
   box-shadow: var(--darkShadow);
@@ -325,6 +327,7 @@ h6 {
 }
 .img-container img {
   width: 100%;
+  height: 170px;
   display: block;
   transition: var(--mainTransition);
 }
@@ -1147,13 +1150,13 @@ html.lt-ie-10 .range > .cell-lg-6 {
 
 .contactHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/map.png") center/cover no-repeat;
+  background: url("./images/bikes-contact-page.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .contactHero {
-  background-image: url("./images/map.png");
+  background-image: url("./images/bikes-contact-page.jpg");
   min-height: 60vh;
 }
 
